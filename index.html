@@ -269,14 +269,11 @@
         <div class="cta-text">
           <h2><span lang="zh">一起打造高绩效外贸团队</span><span lang="en">Build a high-performing trade team</span></h2>
           <p>
-            <span lang="zh">想领取《外贸团队诊断清单》或预约一对一咨询？欢迎通过微信/公众号添加我们。</span>
-            <span lang="en">Want the team diagnostic checklist or a 1-on-1 consultation? Add us on WeChat or follow our official account.</span>
+            <span lang="zh">与 2000+ 名创始人、外贸精英、厂二代同行，深度链接，共享实战经验。</span>
+            <span lang="en">Join 2000+ founders, trade professionals, and factory next-gens. Connect deeply and share real-world experience.</span>
           </p>
           <div class="cta-actions">
-            <button class="btn btn-primary" id="add-wechat-btn"><span lang="zh">点击添加微信</span><span lang="en">Add WeChat</span></button>
-            <button class="btn btn-outline" id="follow-wechat-btn">
-              <span lang="zh">扫码关注公众号</span><span lang="en">Scan to follow</span>
-            </button>
+            <button class="btn btn-primary" id="add-wechat-btn"><span lang="zh">联系我们</span><span lang="en">Contact us</span></button>
           </div>
         </div>
         <div class="cta-qr-wrap" id="wechat-card">
@@ -333,7 +330,6 @@
 
       // CTA: pulse WeChat card on button click
       const addBtn = document.getElementById("add-wechat-btn");
-      const followBtn = document.getElementById("follow-wechat-btn");
       const card = document.getElementById("wechat-card");
 
       function pulseCard() {
@@ -344,7 +340,6 @@
       }
 
       if (addBtn) addBtn.addEventListener("click", pulseCard);
-      if (followBtn) followBtn.addEventListener("click", pulseCard);
     </script>
   </body>
 </html>
