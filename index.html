@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-page-node-id="WZP8gCg2dDhADGZac3A9sJ">
+<head data-page-node-id="UuLmj349INsKE6qv9t6iAl">
+<meta charset="UTF-8" data-page-node-id="Gwqfs0DM2qzMQ9OT1Q1z3p">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="eraCRdHiFVzE3iHSHqwy2B">
+<title>GloSource — Your Sourcing Partner in China</title>
+<meta name="description" content="GloSource gives overseas buyers a dedicated sourcing team on the ground in China — vetted suppliers, transparent pricing, and quality control from first sample to final delivery." data-page-node-id="cP04qmxHE0JfITHxIsQeHv">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" data-page-node-id="YtaqfUzvDxCkFpAXf4C5gv">
+<style>
+  :root{
+    --ink:#16181D;
+    --ink-soft:#3A3E46;
+    --grey:#6B7078;
+    --line:#E8E9EB;
+    --bg:#FFFFFF;
+    --bg-soft:#F7F7F8;
+    --accent:#E5483E;
+    --accent-dark:#C0392B;
+    --radius:14px;
+    --max:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Inter,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);background:var(--bg);
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  img{display:block;max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .container{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .nav .logo img{height:30px}
+  .nav-links{display:flex;gap:32px;align-items:center}
+  .nav-links a{font-size:14.5px;font-weight:500;color:var(--ink-soft);transition:color .15s}
+  .nav-links a:hover{color:var(--ink)}
+  .btn{
+    display:inline-block;padding:12px 24px;border-radius:10px;
+    font-size:15px;font-weight:600;transition:all .15s;cursor:pointer;border:none;
+  }
+  .btn-accent{background:var(--accent);color:#fff}
+  .btn-accent:hover{background:var(--accent-dark);transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+  .btn-ghost:hover{border-color:#fff}
+  .btn-dark-outline{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+  .btn-dark-outline:hover{background:var(--ink);color:#fff}
+  .nav .btn{padding:9px 18px;font-size:14px}
+
+  /* ---------- Hero ---------- */
+  .hero{background:var(--ink);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+  .hero::after{
+    content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;
+    border:2px solid rgba(229,72,62,.18);border-radius:50%;
+  }
+  .hero::before{
+    content:"";position:absolute;right:-60px;top:-60px;width:280px;height:280px;
+    border:2px solid rgba(255,255,255,.07);border-radius:50%;
+  }
+  .hero .kicker{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:22px;
+  }
+  .hero .kicker::before{content:"";width:22px;height:2px;background:var(--accent)}
+  .hero h1{
+    font-size:clamp(34px,5vw,56px);font-weight:700;letter-spacing:-.02em;
+    line-height:1.12;max-width:760px;
+  }
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .hero p.sub{
+    margin-top:22px;font-size:18px;color:rgba(255,255,255,.72);max-width:640px;
+  }
+  .hero .cta-row{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
+  .hero-chips{display:flex;gap:28px;margin-top:56px;flex-wrap:wrap}
+  .chip{display:flex;flex-direction:column;gap:2px}
+  .chip b{font-size:24px;font-weight:700;letter-spacing:-.01em}
+  .chip b i{font-style:normal;color:var(--accent)}
+  .chip span{font-size:13.5px;color:rgba(255,255,255,.6)}
+
+  /* ---------- Sections ---------- */
+  section{padding:88px 0}
+  .section-tag{
+    font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--accent);margin-bottom:14px;
+  }
+  h2{font-size:clamp(28px,3.6vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.18}
+  .section-head{max-width:680px;margin-bottom:52px}
+  .section-head p{margin-top:14px;color:var(--grey);font-size:17px}
+
+  /* ---------- Services ---------- */
+  .services{background:var(--bg-soft)}
+  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .svc-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:40px 38px;display:flex;flex-direction:column;position:relative;
+    transition:transform .18s, box-shadow .18s;
+  }
+  .svc-card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(22,24,29,.09)}
+  .svc-card .badge{
+    align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--accent);background:rgba(229,72,62,.08);
+    padding:6px 12px;border-radius:999px;margin-bottom:18px;
+  }
+  .svc-card h3{font-size:26px;font-weight:700;letter-spacing:-.01em}
+  .svc-card .tagline{color:var(--grey);font-size:15.5px;margin-top:8px;font-style:italic}
+  .svc-card .for{margin-top:22px;font-size:14.5px;color:var(--ink-soft)}
+  .svc-card .for b{text-transform:uppercase;font-size:12.5px;letter-spacing:.08em;color:var(--ink);display:block;margin-bottom:6px}
+  .svc-card ul{list-style:none;margin-top:20px;margin-bottom:34px;display:flex;flex-direction:column;gap:11px}
+  .svc-card ul li{
+    padding-left:28px;position:relative;font-size:15px;color:var(--ink-soft);
+  }
+  .svc-card ul li::before{
+    content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;
+    background:rgba(229,72,62,.1) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.5 8.5l2.3 2.3L11.5 5.8" fill="none" stroke="%23E5483E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/10px no-repeat;
+  }
+  .svc-card ul li b{color:var(--ink)}
+  .svc-card .btn{margin-top:auto;text-align:center}
+  .svc-note{margin-top:36px;text-align:center;color:var(--grey);font-size:14.5px}
+  .svc-note a{color:var(--accent);font-weight:600}
+
+  /* ---------- Process ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;counter-reset:step}
+  .step{border-top:3px solid var(--line);padding-top:22px;position:relative}
+  .step::before{
+    counter-increment:step;content:"0" counter(step);
+    font-size:15px;font-weight:700;color:var(--accent);
+  }
+  .step h4{font-size:17.5px;font-weight:700;margin:8px 0 10px;letter-spacing:-.01em}
+  .step p{font-size:14.5px;color:var(--grey)}
+
+  /* ---------- Why ---------- */
+  .why{background:var(--ink);color:#fff}
+  .why h2{color:#fff}
+  .why .section-head p{color:rgba(255,255,255,.65)}
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .why-card{
+    background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+    border-radius:var(--radius);padding:34px 30px;
+  }
+  .why-card .num{font-size:15px;font-weight:700;color:var(--accent)}
+  .why-card h4{font-size:19px;font-weight:700;margin:10px 0 12px;letter-spacing:-.01em}
+  .why-card p{font-size:15px;color:rgba(255,255,255,.68)}
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap{max-width:760px;margin:0 auto}
+  .faq-item{border-bottom:1px solid var(--line)}
+  .faq-item input{display:none}
+  .faq-item label{
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding:22px 4px;cursor:pointer;font-size:16.5px;font-weight:600;
+  }
+  .faq-item label::after{
+    content:"+";font-size:24px;font-weight:400;color:var(--accent);transition:transform .2s;flex-shrink:0;
+  }
+  .faq-item input:checked + label::after{transform:rotate(45deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
+  .faq-a p{padding:0 40px 22px 4px;color:var(--grey);font-size:15px}
+  .faq-item input:checked ~ .faq-a{max-height:300px}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--bg-soft)}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+  .contact h2{margin-bottom:16px}
+  .contact .lead{color:var(--grey);font-size:17px;max-width:480px}
+  .contact-cards{display:flex;flex-direction:column;gap:16px}
+  .ccard{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 26px;display:flex;gap:16px;align-items:flex-start;
+  }
+  .ccard .ico{
+    width:42px;height:42px;border-radius:10px;background:rgba(229,72,62,.09);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .ccard .ico svg{width:20px;height:20px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .ccard b{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--grey);margin-bottom:3px;font-weight:600}
+  .ccard span{font-size:16px;font-weight:600}
+  .quote-box{
+    background:var(--ink);color:#fff;border-radius:var(--radius);padding:40px 38px;
+  }
+  .quote-box h3{font-size:24px;font-weight:700;letter-spacing:-.01em}
+  .quote-box p{color:rgba(255,255,255,.7);font-size:15px;margin:12px 0 26px}
+  .quote-box ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:30px}
+  .quote-box ul li{padding-left:26px;position:relative;font-size:14.5px;color:rgba(255,255,255,.85)}
+  .quote-box ul li::before{
+    content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border-radius:50%;
+    background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.5 8.5l2.3 2.3L11.5 5.8" fill="none" stroke="%23E5483E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>') center/14px no-repeat;
+  }
+  .quote-box .btn{width:100%;text-align:center}
+
+  /* ---------- Footer ---------- */
+  footer{border-top:1px solid var(--line);padding:32px 0;background:#fff}
+  .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+  .footer-inner img{height:24px;opacity:.85}
+  .footer-inner p{font-size:13.5px;color:var(--grey)}
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:900px){
+    .nav-links a:not(.btn){display:none}
+    .svc-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    section{padding:64px 0}
+    .hero{padding:72px 0 60px}
+  }
+  @media(max-width:560px){
+    .steps{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body data-page-node-id="jgtcKIuetACueiIFl1QnZj">
+
+<!-- ============ HEADER ============ -->
+<header data-page-node-id="pUgd6AylJrRZNykrsvXBWC">
+  <div class="container nav" data-page-node-id="st67b9hnIVe2tGOs5jN7DP">
+    <a class="logo" href="#" data-page-node-id="8WAy7TPIL6LEzLB20sYCGF"><img src="assets/logo.svg" alt="GloSource" data-page-node-id="YCupImJ3BYufLSpRByrHt1"></a>
+    <nav class="nav-links" data-page-node-id="fedKAMay2FHfCpaPANY2xd">
+      <a href="#services" data-page-node-id="qNsJDJN7VA9cPXYlcvtxRk">Services</a>
+      <a href="#process" data-page-node-id="A0yd787iD7h63Bo3oBKSsS">How It Works</a>
+      <a href="#why" data-page-node-id="Bxp41wLS7eJ782SILXid5y">Why GloSource</a>
+      <a href="#faq" data-page-node-id="lgEWDEZnibqvZ0hbR0TT6F">FAQ</a>
+      <a href="#contact" class="btn btn-accent" data-page-node-id="XuSFSdZqHLb0YGFCHHm0UR">Start Your Project With Us</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero" data-page-node-id="8Zkiud65NzpBRWf7lJWNXd">
+  <div class="container" data-page-node-id="YX9GnX0Er10zfals9JUV40">
+    <div class="kicker" data-page-node-id="RPdYOupZaW4qff676GDbAH">Direct. Verified. Transparent.</div>
+    <h1 data-page-node-id="YDrNtCbg9ogKkQhlm3cnvZ">Your sourcing partner in China — <em data-page-node-id="bYcNkdSdHZgRVUcURHuO2A">accountable for every step.</em></h1>
+    <p class="sub" data-page-node-id="MovyHwH9281N9zAJmgfVl7">Finding the right factory in China shouldn't feel like a gamble. GloSource gives you a dedicated team on the ground — vetted suppliers, transparent pricing, and quality control from first sample to final delivery.</p>
+    <div class="cta-row" data-page-node-id="X6j6xgRfBdjcFhP9gTtZL1">
+      <a href="#contact" class="btn btn-accent" data-page-node-id="CIkopj2llf9igIrneZhVuu">Start Your Project With Us</a>
+      <a href="#services" class="btn btn-ghost" data-page-node-id="own3y6rVxjw306DXZtkMVn">Explore Services</a>
+    </div>
+    <div class="hero-chips" data-page-node-id="4A8NERLs8KbThQreiE7Onc">
+      <div class="chip" data-page-node-id="Oh89idA76M9FPeLmuUZBIo"><b data-page-node-id="dN5uXRjO3rKG6bK5N5GyvR">10</b><span data-page-node-id="8sIsWFyS7mPGbBSppH2cT8">Suppliers screened per project</span></div>
+      <div class="chip" data-page-node-id="08pbNFe9OwIKtDd9GXTfaK"><b data-page-node-id="D7xwomIegYJeDrYU0SAg8Y"><i data-page-node-id="xkmJf9FXwZQii9CXwtCALE">10</i> days</b><span data-page-node-id="N0jjhAERY3SveqpZ23z9l3">Supplier report turnaround</span></div>
+      <div class="chip" data-page-node-id="6voNJJsYUu0E5HjstC8aJm"><b data-page-node-id="JltytsF0tysEHBRtvYKisi">Top 3</b><span data-page-node-id="RFlCKis5yQVd7Yfm8I19KC">Recommended suppliers, vetted</span></div>
+      <div class="chip" data-page-node-id="lVj7gteemVTqV44e6jytSB"><b data-page-node-id="dFVu2zL9L4yoUUwACxlGdc">End-to-end</b><span data-page-node-id="atmgisJOJ7e9Nu2aDFj1SI">From sampling to final delivery</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services" data-page-node-id="bcJE645tsr8GT08v1nlKMV">
+  <div class="container" data-page-node-id="WeHWFStmHt4rVCOkDcxh8W">
+    <div class="section-head" data-page-node-id="MOlrZt6CBEZQzqoKd9V06D">
+      <div class="section-tag" data-page-node-id="Sx2liiRA4ekq0FdSxLf2pn">Our Services</div>
+      <h2 data-page-node-id="AwHXD7US4cdE0dBWfsYhmQ">Two ways to work with us</h2>
+      <p data-page-node-id="LUDyRGWEoydGzdvhTcD9Hz">A focused, one-off supplier report — or a fully outsourced sourcing department. Either way, one team runs it, from first screening to final delivery.</p>
+    </div>
+    <div class="svc-grid" data-page-node-id="yOGZPBlCCEEIRhdSnE9iI8">
+
+      <div class="svc-card" data-page-node-id="rv71ZnZj6IlYSFfHzeOJpk">
+        <span class="badge" data-page-node-id="WELkrWlzdeJnMr3KPNgkXn">Option A</span>
+        <h3 data-page-node-id="AiBF786tbY254NfjykRlta">The Basic Filter</h3>
+        <p class="tagline" data-page-node-id="RBdD4ImDNjCCmgHYL3rj4e">A focused, one-off supplier report</p>
+        <div class="for" data-page-node-id="GbEBpZ5ruE1sImfqdc4Taq">
+          <b data-page-node-id="sOKZUphlF3BDdGBrzpkBOh">Suitable for</b>
+          You're looking for the right supply-chain fit in China and want a trustworthy read on your options before you commit.
+        </div>
+        <ul data-page-node-id="VDYj1I2an4M2B5CU0M4uwd">
+          <li data-page-node-id="AjMfBW4i9FIPxGsLvQm6fA">10–15 suppliers screened</li>
+          <li data-page-node-id="ZhAIMx1iUPcx3oOAcbzKTJ">Top 3 recommended suppliers</li>
+          <li data-page-node-id="K44TO4z7zA6rYwx7WHK2pV">Factory background check</li>
+          <li data-page-node-id="NI9pSv9WEN8UWqcin1AwGP">Export capability verification</li>
+          <li data-page-node-id="Ye09bVZxBa95RFXpVL1UkM">MOQ &amp; pricing benchmark</li>
+          <li data-page-node-id="qvKGbT0VjEihau0NJvwSdu">Production capacity analysis</li>
+          <li data-page-node-id="rxSyvXFTWiFPKdrQXO2QhB">Risk notes</li>
+          <li data-page-node-id="wEyhnCpuL8YsuNchXWNk0g">Sampling negotiation</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark-outline" data-page-node-id="p0XIVcWmfEZEDSE6tlsKkW">Start Your Project With Us</a>
+      </div>
+
+      <div class="svc-card" data-page-node-id="weUds1OjoIwRmR2rcH0CAg">
+        <span class="badge" data-page-node-id="kzpv1r2fgEO0WBzTQuSgtM">Option B</span>
+        <h3 data-page-node-id="dYr9FUFAX8Ab0VqQaiw2uO">The Pro Partner</h3>
+        <p class="tagline" data-page-node-id="sAoK2cKXbtpwOmdnBm8eOY">A fully outsourced China sourcing department</p>
+        <div class="for" data-page-node-id="Mej3W6a31s3LlUeHMmUSnc">
+          <b data-page-node-id="EbZioRFVVuvrFecZsX09Ym">Suitable for</b>
+          You want a zero-headache, outsourced supply chain department in China — without adding to your headcount.
+        </div>
+        <ul data-page-node-id="ba4Mp0pWBSbzWwRZ0EnuBZ">
+          <li data-page-node-id="b8OA9r2BcMbK3mCPbWSBF2"><b data-page-node-id="T6ZGBjJ67actiMObmQdiRA">Development &amp; Sampling</b> — managing technical specs and prototype iterations until approved</li>
+          <li data-page-node-id="J63rZYDDcH9iBjLXo6H6np"><b data-page-node-id="GBzu272NDPT0CskRfSr1YJ">Production Oversight</b> — on-site quality control (QC) and milestone tracking</li>
+          <li data-page-node-id="ad01aHZq9MHKbEKWnou1ge"><b data-page-node-id="NQuyZmbTZEzoeKR4bQOaNg">Risk Mitigation</b> — factory negotiations, contract compliance, and lead-time buffering</li>
+          <li data-page-node-id="5QGyuDXbkL5Oj3haa5YpgK"><b data-page-node-id="rjxsx6M2nWmkbkTWwjnPot">End-to-End Logistics</b> — coordination from factory floor to your designated warehouse</li>
+        </ul>
+        <a href="#contact" class="btn btn-accent" data-page-node-id="HEW2LfGancqxohfTsCzoOD">Start Your Project With Us</a>
+      </div>
+
+    </div>
+    <p class="svc-note" data-page-node-id="pFTCj1yil9gLd5aGDo6Wdw">Not sure which fits? <a href="#contact" data-page-node-id="px3nY0A9dCfBgQYAAc4tTA">Tell us about your project</a> and we'll recommend the right scope.</p>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section id="process" data-page-node-id="ROgND1hgBdm2T9xJtqpsWT">
+  <div class="container" data-page-node-id="jKCxzUU6ZA108kAFOfIo1V">
+    <div class="section-head" data-page-node-id="nj4wjLFAYoM7UHhNhy48UW">
+      <div class="section-tag" data-page-node-id="grubXHSD8WYF0cg24HMOci">How It Works</div>
+      <h2 data-page-node-id="44BrBAf94QUqoCSrzt1qT3">From first call to final delivery</h2>
+      <p data-page-node-id="UyCBWUYwhzJSomJsyunsyd">A clear, structured process — so you always know what's happening with your order.</p>
+    </div>
+    <div class="steps" data-page-node-id="KhLT41GAaIukGaXIH6OL0i">
+      <div class="step" data-page-node-id="9AAXhT8MAOFPKzMt8u2Trv">
+        <h4 data-page-node-id="xnmWZcKtC2yhVMhHl09gfx">Scope your project</h4>
+        <p data-page-node-id="fQ8qTwwJuT11TMJD1S8vPy">A short call to understand your product, target specs, volumes, and timeline. We define exactly what "done" looks like.</p>
+      </div>
+      <div class="step" data-page-node-id="9JigcgvZuaYvMrG7QTYfQp">
+        <h4 data-page-node-id="w4if2EL9147qONOURoVoAU">Screen &amp; verify</h4>
+        <p data-page-node-id="LnVFCmVFJFohXpZFix48lu">We shortlist from our vetted supplier network, run background checks, and verify export capability and production capacity.</p>
+      </div>
+      <div class="step" data-page-node-id="fUsLQXeOI9wZw1j2bAIbQH">
+        <h4 data-page-node-id="0scEnJNspjV2SQb7gOZ0bL">Shortlist &amp; sample</h4>
+        <p data-page-node-id="VTlGaGuvUJSGRBUe45zuqI">You receive a Top 3 recommendation with pricing benchmarks and risk notes. We negotiate sampling until prototypes are approved.</p>
+      </div>
+      <div class="step" data-page-node-id="AMm7wC2vijAG87NY7kQBp1">
+        <h4 data-page-node-id="y9b0fA0bHDyBmYhwE75p88">Produce &amp; deliver</h4>
+        <p data-page-node-id="o4gMqe1g75P10l1HtwFAFU">With the Pro Partner, we manage production, on-site QC, compliance, and logistics — from factory floor to your warehouse.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="why" id="why" data-page-node-id="lOxpzX2rhXdfQR3AhUojr3">
+  <div class="container" data-page-node-id="ziQcJ8p3m45XCF1t4ROOyw">
+    <div class="section-head" data-page-node-id="eLYDOYBuZmGgG5yzS7Jb5c">
+      <div class="section-tag" data-page-node-id="PdqN9FDr7vrI6aoXWPmdSa">Why GloSource</div>
+      <h2 data-page-node-id="BQB18WyxUYfbyLB9dZOA8U">Built to protect the buyer</h2>
+      <p data-page-node-id="Yij9Alp9HeB3I9gWrKWBfV">One dedicated team on the ground in China — from your first quote to final delivery.</p>
+    </div>
+    <div class="why-grid" data-page-node-id="PJbCI0skWk2zCv9KdDjx4G">
+      <div class="why-card" data-page-node-id="ZNmjbEpfs8wyRkH1rXC8VO">
+        <div class="num" data-page-node-id="RiBrjjEYxFzy6dSDFDFudL">01</div>
+        <h4 data-page-node-id="onhxGCJPrZC3Oxq4DtuNRO">Your China office, without the overhead</h4>
+        <p data-page-node-id="phMz7CF7XXdcSik1BaMkBb">Get a dedicated sourcing team on the ground in China, without the cost and complexity of hiring local staff.</p>
+      </div>
+      <div class="why-card" data-page-node-id="RMgCQx3lrJTPFEohJAc2Mp">
+        <div class="num" data-page-node-id="gWQ7yytoNiFIPIyh63vwcJ">02</div>
+        <h4 data-page-node-id="oHHSDuf74P1PaXDyncupCR">Fully aligned with your interests</h4>
+        <p data-page-node-id="COGXGUAul16LN5m54ITutY">We represent you, the buyer — working on your behalf to catch supply-chain risks early and resolve issues as they come up.</p>
+      </div>
+      <div class="why-card" data-page-node-id="jbJPsxAPoQiaAv1QB3PNf0">
+        <div class="num" data-page-node-id="Uuwo50GMNxMeUvNWKdfFvW">03</div>
+        <h4 data-page-node-id="GB7M1SR5VbxWivsdAiiGCH">A vetted supplier network</h4>
+        <p data-page-node-id="TKoLgGxJjpKbUGOLBrdHdK">Direct access to our China Supplier Network — pre-screened factories across categories, ready to quote.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" data-page-node-id="G3EpmjBYc24FFszvabeWdq">
+  <div class="container" data-page-node-id="AdTCPxRsgYdDmfr2v5Pzqn">
+    <div class="section-head" style="text-align:center;margin-left:auto;margin-right:auto" data-page-node-id="3OLylUqhksHaLmdp5AXDZS">
+      <div class="section-tag" style="font-size:17px" data-page-node-id="hADSZp4MFKDXS5PH1I41a8">FAQ</div>
+      <h2 data-page-node-id="Ev8uZEOKwrp8xbBCLNLJCo">Questions buyers ask us</h2>
+    </div>
+    <div class="faq-wrap" data-page-node-id="oNXt6rmr6k5iffFYSdZZiT">
+      <div class="faq-item" data-page-node-id="eVowlT1UstxlmWw9UrQLCc">
+        <input type="checkbox" id="q2" checked data-page-node-id="FVG1mpLqqiseCYQQlB6XAG">
+        <label for="q2" data-page-node-id="lqdc4CntyZobtx4swTvPzW">How fast can I get the supplier report?</label>
+        <div class="faq-a" data-page-node-id="Ng1JFu7yBo7NojX9l1KiYu"><p data-page-node-id="xFFtn2wdSfBVVn0tT081u6">The Basic Filter report is delivered within 10 working days of project scoping. It covers 10–15 screened suppliers, a Top 3 recommendation, background checks, export verification, MOQ and pricing benchmarks, and risk notes.</p></div>
+      </div>
+      <div class="faq-item" data-page-node-id="RVvHHWpLhyKJVq5LN57Qor">
+        <input type="checkbox" id="q3" data-page-node-id="s6YB6l4YlM2DsIHQMlBdam">
+        <label for="q3" data-page-node-id="6QZkCItDGjIDJ0w2OVtqXA">What product categories do you cover?</label>
+        <div class="faq-a" data-page-node-id="Z2WpCEhmd9HMC1L45CKtLq"><p data-page-node-id="xQLNtx2x67T7qEUgYJurfG">We work across consumer goods and light industrial categories — including sporting goods, home and kitchen products, fragrance and personal care, and OEM custom manufacturing. If your category isn't listed, ask us: our network spans vetted factories in most export-driven clusters in China.</p></div>
+      </div>
+      <div class="faq-item" data-page-node-id="c0In3TyWyGTLTIhgG6xMmM">
+        <input type="checkbox" id="q4" data-page-node-id="zECTQIkrI5tsVhlGoXIDuf">
+        <label for="q4" data-page-node-id="87WDELsBppP1KG7O4UelCD">Can you handle my brand / private label (OEM) orders?</label>
+        <div class="faq-a" data-page-node-id="2PZCpHyCrfN5lc8H6Rt23L"><p data-page-node-id="2fWDoLxotLXFwFTLrujzMD">Yes. OEM and private-label projects are a core part of our work — we manage technical specifications, prototype iterations, branding requirements, and sampling negotiations until you approve the final product.</p></div>
+      </div>
+      <div class="faq-item" data-page-node-id="sGlCunkXdrwvbI3HWSLf77">
+        <input type="checkbox" id="q5" data-page-node-id="a8uzlW9jRmbo89rC2GGLC7">
+        <label for="q5" data-page-node-id="OODofkCDV6g7GnvFEXlSUh">How does pricing work?</label>
+        <div class="faq-a" data-page-node-id="GZsIeQenINchRew25nJRAk"><p data-page-node-id="AAeoAkpiTAk6RQqERsMThB">Every project is scoped individually. The Basic Filter is a fixed-fee, one-off report; the Pro Partner runs on a monthly retainer with a success fee tied to outcomes. Start your project with your details and we'll send a clear, itemized proposal — no hidden fees.</p></div>
+      </div>
+      <div class="faq-item" data-page-node-id="prF2MgqtCZJvKsBTLDoAeo">
+        <input type="checkbox" id="q6" data-page-node-id="G0K5LUg5DdP1mB3KAd1FBZ">
+        <label for="q6" data-page-node-id="4pszcX7S3wxm5okcuwwpYC">Where are you based?</label>
+        <div class="faq-a" data-page-node-id="pvDhpJzDcTBK1OPWVI6QGJ"><p data-page-node-id="DSAympM108FzuLL6BARWTg">Our team operates from Shenzhen and Hong Kong — right inside China's manufacturing ecosystem, with the cross-border flexibility of Hong Kong for contracts and payments.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact" data-page-node-id="ty3u7aonVK5ABoFkW4Nu5f">
+  <div class="container contact-grid" data-page-node-id="qjTP3fWW53HlB44PxWsTP2">
+    <div data-page-node-id="uwiafJstgTHmPtWD1JNUos">
+      <div class="section-tag" data-page-node-id="jqsuMK0INdoDM4BH3PqOEO">Contact</div>
+      <h2 data-page-node-id="o9fOAXU20vH0jwB8d6YEja">Ready to scope your project?</h2>
+      <p class="lead" data-page-node-id="g22doG9eZpaMvPDebA294c">Tell us what you're sourcing, your target volumes, and your timeline. We'll reply within one business day with the right scope and a quote.</p>
+      <div class="contact-cards" style="margin-top:32px" data-page-node-id="nAGcFIpAWjj2knIU0yKfFd">
+        <div class="ccard" data-page-node-id="6KOF5et5Fsi2FQDXyH5PNT">
+          <div class="ico" data-page-node-id="SGyOtxvC0gk5gNWFLCTcJT"><svg viewBox="0 0 24 24" data-page-node-id="SmBrZ1w7p27h3Aoc4gVXJb"><rect x="2" y="4" width="20" height="16" rx="2" data-page-node-id="FG7LfoQLWBOiCTbfvTfgVG"/><path d="M22 6l-10 7L2 6" data-page-node-id="9Pvz4abYPZ0ASzPqfdFdE7"/></svg></div>
+          <div data-page-node-id="TBQWRjdyZ4G7OKh5X1OY2J"><b data-page-node-id="VCjjIQnyIW6gWfpvTi79gN">Email</b><span data-page-node-id="bviq8SrfhMv1mey08IDZAn"><a href="mailto:cheer.goglobal@gmail.com" data-page-node-id="pGcybErhw60tnjuGJohVrO">cheer.goglobal@gmail.com</a></span></div>
+        </div>
+        <div class="ccard" data-page-node-id="DbQbBpviS4uSJEc3ihQeSQ">
+          <div class="ico" data-page-node-id="ocde97IezIvjQjOitZJIyz"><svg viewBox="0 0 24 24" data-page-node-id="tUK3jkSPkpKzpw3O1iWQkx"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" data-page-node-id="DYd14dcdQlry7dDELnFIUP"/><circle cx="12" cy="10" r="3" data-page-node-id="tr8VF7purwCU8BjE13pdkq"/></svg></div>
+          <div data-page-node-id="yx8GPzQkItI9PKa6GkNpBu"><b data-page-node-id="31hJmlc8pnngAGI4VpNLuW">On the ground in</b><span data-page-node-id="VibKJZ4AbfNTMMEU8GIgCw">Shenzhen · Hong Kong</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="quote-box" data-page-node-id="IfXt7lt2KITu96tLdcxKPr">
+      <h3 data-page-node-id="6Vx8L9h07jGL79BBcfbghQ">Start Your Project With Us</h3>
+      <p data-page-node-id="9fNLAjEVq5oBeUPnFotJw9">Email us directly — include these and you'll get a faster, sharper proposal:</p>
+      <ul data-page-node-id="K7zC7hbP0sEEmNn4NMzdRa">
+        <li data-page-node-id="iGsUiEirmwTtcbDyJwbAwp">Product &amp; category (specs, materials, or a reference link)</li>
+        <li data-page-node-id="EodbkHQt564oHfKqfpRETJ">Order quantity — trial and annual volume</li>
+        <li data-page-node-id="w16u2OalrhyfRYLCKS4LaK">Target unit price, if you have one</li>
+        <li data-page-node-id="9jcijnSGK024vW0Hj3vqoP">Destination market &amp; delivery terms (e.g. CIF, FOB)</li>
+        <li data-page-node-id="9lAdO8WhCXBGYHb4mOvNOy">Timeline for first order</li>
+      </ul>
+      <a class="btn btn-accent" href="mailto:cheer.goglobal@gmail.com?subject=New%20Sourcing%20Project&body=Hi%20GloSource%20team%2C%0A%0AProduct%20%26%20category%3A%20%0AOrder%20quantity%20(trial%20%2F%20annual)%3A%20%0ATarget%20unit%20price%3A%20%0ADestination%20%26%20delivery%20terms%3A%20%0ATimeline%3A%20%0A%0AThanks%2C" data-page-node-id="GbBXJr9dhii59HctyVcgX0">Start Your Project With Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer data-page-node-id="3W3VKP9gQ503h6sA4yUbW9">
+  <div class="container footer-inner" data-page-node-id="n7xWn8SnhEDUgxCQI5cL4n">
+    <img src="assets/logo.svg" alt="GloSource" data-page-node-id="XbcjdR0jfp1AeZxMFHdwX0">
+    <p data-page-node-id="1lyX0qlblDBLTDJ1SboYaa">© 2026 GloSource · Sourcing from Shenzhen &amp; Hong Kong</p>
+  </div>
+</footer>
+
+</body>
+</html>
